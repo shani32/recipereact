@@ -32,7 +32,7 @@ const Gluten = () => {
         <Wrapper>
           <h3>Gluten Free Picks</h3>
           <Splide options={{
-            perPage:5,
+            perPage:4,
             arrows:false,
             pagination:false,
             drag:"free",
@@ -64,21 +64,22 @@ const Card= styled.div`
 min-height:20rem;
 border-radius:1rem;
 overflow:hidden;
-position:relative
+position:relative;
+margin:5px;
 
 img{
   border-radius:2rem;
   posu=ituin:absolute,
   left:0,
   width:100%;
-  objext-fit:cover;
+  object-fit:cover;
 }
 p{
   position:absolute;
   z-index:10;
   left:50%;
   bottom:0%;
-  transform:translate(-50%, 0%);
+  transform:translate(-50%, 15%);
   color:white;
   width:100%;
   text-align:center;
