@@ -24,8 +24,10 @@ function Option() {
         {option.map((item)=>{
             return(
                 <Cards key={item.id}>
+                    <Link to={'/recipe/'+ item.id}>
                     <img src={item.image} alt="" />
                     <h4>{item.title}</h4>
+                    </Link>
                 </Cards>
             )
         })}
@@ -35,7 +37,7 @@ function Option() {
 }
 
 
-const Grid= styled.div`
+const Grid= styled(motion.div)`
 display:grid;
 grid-template-columns:repeat (auto-fit, max(10rem, 1fr))
 `
