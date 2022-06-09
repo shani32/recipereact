@@ -48,13 +48,15 @@ function RecipeDetails() {
 const DetailWrapper= styled.div`
 margin-top:10rem;
 margin-bottom:5rem;
-display:flex';
+display:flex
+
 .active{
     background:linear-gradient(35deg, #494949, #313131);
     color:white;
 }
 h2{
     margin-bottom:2rem;
+    
 }
 li{
     font-size:1.2rem;
@@ -65,14 +67,19 @@ ul{
 }`
 const Button= styled.div`
 padding:1rem, 2rem;
-color:#313131;
+color:white;
 font-weight:600;
 margin-right:2rem;
-background:white;
-border:2px solid black`
+background:gray;
+border:2px solid black;
+width:150px;
+cursor:pointer;
+`
 
 const Info= styled.div`
-margin-left:10rem
+margin-left:10rem;
+font-size:1.5rem;
+
 `
 
 

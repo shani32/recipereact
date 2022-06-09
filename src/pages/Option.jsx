@@ -20,15 +20,19 @@ function Option() {
     },[params.type])
 
   return (
-    <Grid>
+    <Grid 
+    // style={{display:'flex', justifyContent: 'space-between', width:'400px', margin:'50px', padding:'50px'}}
+    >
         {option.map((item)=>{
             return(
+                
                 <Cards key={item.id}>
                     <Link to={'/recipe/'+ item.id}>
                     <img src={item.image} alt="" />
                     <h4>{item.title}</h4>
                     </Link>
                 </Cards>
+               
             )
         })}
 
@@ -39,11 +43,15 @@ function Option() {
 
 const Grid= styled(motion.div)`
 display:grid;
-grid-template-columns:repeat (auto-fit, max(10rem, 1fr))
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap:1rem;
+margin-left:5rem
+// grid-template-columns:repeat (auto-fit(10rem, 1fr));
+
 `
 const Cards= styled.div`
 img{
-    width:20%;
+    width:400px;
     border-radius:2rem;
     text-align:center;
 }
