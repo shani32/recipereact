@@ -19,7 +19,7 @@ function Searched() {
   },[params.search])
 
   return (
-    <div>
+    <Grid>
         {searched.map((item)=>{
             return(
                 <Cards key={item.id}>
@@ -30,16 +30,18 @@ function Searched() {
                 </Cards>
             )
         })}
-    </div>
+    </Grid>
   )
 }
 const Grid= styled.div`
 display:grid;
-grid-template-columns:repeat (auto-fit, minmax(10rem, 1fr))
+grid-template-columns:1fr 1fr 1fr;
+grid-gap:2rem;
+margin:5rem
 `
 const Cards= styled.div`
 img{
-    width:20%;
+    width:90%;
     border-radius:2rem;
     text-align:center;
     

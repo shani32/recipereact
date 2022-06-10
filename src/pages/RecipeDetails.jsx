@@ -53,6 +53,7 @@ const DetailWrapper= styled.div`
 margin-top:8rem;
 margin-bottom:5rem;
 display:flex;
+justify-content:center;
 
 .active{
     background:linear-gradient(35deg, #494949, #313131);
@@ -99,7 +100,8 @@ const Info= styled.div`
 margin-left:5rem;
 font-size:1.5rem;
 // width:900px
-padding-right:7rem
+padding-right:7rem;
+
 
 
 `
