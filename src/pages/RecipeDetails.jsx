@@ -22,11 +22,15 @@ function RecipeDetails() {
     }, [params.name])
   return (
     <DetailWrapper>
+        <Left>
         <h2>{details.title}</h2>
         <img src={details.image} alt="" />
+        </Left>
         <Info>
+            <FatherBtn>
             <Button className={active==='instructions'? 'active':''} onClick={()=> setActive('instructions')}>Instruction</Button>
             <Button className={active==='ingredients'? 'active':''} onClick={()=> setActive('ingredients')}>Ingredients</Button>
+            </FatherBtn>
        {active==='instructions' &&(
            <div>
                 <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
@@ -46,9 +50,9 @@ function RecipeDetails() {
   )
 }
 const DetailWrapper= styled.div`
-margin-top:10rem;
+margin-top:8rem;
 margin-bottom:5rem;
-display:flex
+display:flex;
 
 .active{
     background:linear-gradient(35deg, #494949, #313131);
@@ -56,6 +60,8 @@ display:flex
 }
 h2{
     margin-bottom:2rem;
+    font-size:2.5rem;
+
     
 }
 li{
@@ -64,21 +70,37 @@ li{
 }
 ul{
     margin-top:2rem;
+}
+img{
+    border-radius:10px;
+}`
+const Left= styled.div`{
+    margin-left:4rem;
 }`
 const Button= styled.div`
-padding:1rem, 2rem;
+padding:0.5rem 0rem;
 color:white;
 font-weight:600;
-margin-right:2rem;
+margin-right:0.5rem;
 background:gray;
 border:2px solid black;
+border-radius:5%;
+text-align:center;
 width:150px;
 cursor:pointer;
+
+`
+const FatherBtn=styled.div`
+display:flex;
+
 `
 
 const Info= styled.div`
-margin-left:10rem;
+margin-left:5rem;
 font-size:1.5rem;
+// width:900px
+padding-right:7rem
+
 
 `
 

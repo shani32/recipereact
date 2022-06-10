@@ -19,7 +19,7 @@ function Searched() {
   },[params.search])
 
   return (
-    <Grid>
+    <div>
         {searched.map((item)=>{
             return(
                 <Cards key={item.id}>
@@ -30,7 +30,7 @@ function Searched() {
                 </Cards>
             )
         })}
-    </Grid>
+    </div>
   )
 }
 const Grid= styled.div`
