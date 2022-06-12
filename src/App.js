@@ -15,7 +15,7 @@ function App() {
 
       <Nav>
         <GiKnifeFork/>
-        <Logo to={'/'}>Hungry</Logo>
+        <Logo to={'/'}>Let's Eat</Logo>
       </Nav>
 
         <Search/>

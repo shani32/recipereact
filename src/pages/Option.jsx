@@ -20,9 +20,7 @@ function Option() {
     },[params.type])
 
   return (
-    <Grid 
-    // style={{display:'flex', justifyContent: 'space-between', width:'400px', margin:'50px', padding:'50px'}}
-    >
+    <Grid >
         {option.map((item)=>{
             return(
                 
