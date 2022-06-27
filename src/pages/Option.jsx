@@ -43,9 +43,7 @@ const Grid= styled(motion.div)`
 display:grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-gap:1rem;
-margin-left:5rem
-// grid-template-columns:repeat (auto-fit(10rem, 1fr));
-
+margin-left:5rem;
 `
 const Cards= styled.div`
 img{
